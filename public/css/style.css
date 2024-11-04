@@ -51,3 +51,21 @@
 .flipped .piece {
     transform: rotate(180deg);
 }
+/* 
+
+.drag-source {
+    opacity: 0.6;
+  }
+  
+  .drag-over {
+    background-color: rgba(255, 0, 0, 0);
+  }
+  
+  .piece {
+    cursor: grab;
+    user-select: none;
+  }
+  
+  .piece:active {
+    cursor: grabbing;
+  } */

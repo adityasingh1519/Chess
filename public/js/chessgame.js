@@ -14,7 +14,7 @@ const getPieceUnicode = (piece) => {
     n: "♞",
     b: "♝",
     q: "♛",
-    k: "♚"
+    k: "♚",
   };
 
   return UnicodePieces[piece.type] || "";
@@ -69,8 +69,6 @@ const renderBoard = () => {
 
           handleMove(sourceSquare, targetSource);
         }
-
-       
       });
 
       boardElement.appendChild(squareElement);
@@ -78,7 +76,6 @@ const renderBoard = () => {
   });
 };
 
-renderBoard();
 
 const handleMove = (source, target) => {
   const move = {
@@ -91,6 +88,7 @@ const handleMove = (source, target) => {
 
 socket.on("playerRole", function (role) {
   playerRole = role;
+  console.log(playerRole);
   renderBoard();
 });
 
